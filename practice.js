@@ -197,13 +197,22 @@ const addTwo = num => num + 2;
 //     Use it to filter myFruits 
 const myFruit = ["apple", "banana", "kiwi"];  
 
-
+// // pass isLongWord through myFruit to find which word is > 5
+// function isLongWord(word) {
+//     if (word.length >5) {
+//         return true;
+//     }
+// }
+// let newVarible = myFruit.filter(isLongWord)
+// console.log(newVarible);
 
 // 18. **Chaining Methods**  
 //    Chain `map` (multiply by 3) and `filter` (keep even numbers).  
 
-let myNums2 = [1, 2, 3, 4];
+// let myNums2 = [1, 2, 3, 4];
+// const numNum = myNums2.map((number) => number *3).filter((number) => number%2 === 0);
 
+// console.log(numNum);
 
 
 // ### **Section 6: Mixed Challenges**  
@@ -215,15 +224,38 @@ const data = [{id: 1, items: ["baseball", "soccer ball"]},   {id: 2, items: ["Ga
 
 //     Log all `items` for each object.  
 
+// for (let i = 0; i < data.length; i++){
+//     console.log(Object.values(data[i].items));
+// }
 
 // 20. **Count String Occurrences**  
 //     Loop through mixedLetters  and count how many times "a" appears.  
 const mixedLetters = ["a", "b", "a", "c"];
 
+// let sumA = 0
+// for (let i = 0; i < mixedLetters.length; i++){
+//     if (mixedLetters[i] === 'a'){
+//         sumA += 1;
+//     }
+// }
+// console.log(sumA)
+
 // 21. **Flatten an Array**  
 //     Use `reduce` or loops to flatten the array flat into `[1, 2, 3, 4]; 
 
 const flat = [[1, 2], [3, 4]];
+
+const newFlat = [];
+
+// use a nested loop to combine all numbers in flat into a single array
+for (let i =0; i<flat.length; i++) {
+    for (let j = 0; j<flat[i].length; j++) {
+        newFlat.push(flat[i][j]);
+    }
+   
+}
+console.log(newFlat);
+
 
 // 22. **Sort and Reverse**  
 //     Sort `ages` in ascending order, then reverse it.  
