@@ -245,30 +245,48 @@ const mixedLetters = ["a", "b", "a", "c"];
 
 const flat = [[1, 2], [3, 4]];
 
-const newFlat = [];
+// const newFlat = [];
 
 // use a nested loop to combine all numbers in flat into a single array
-for (let i =0; i<flat.length; i++) {
-    for (let j = 0; j<flat[i].length; j++) {
-        newFlat.push(flat[i][j]);
-    }
+// for (let i =0; i<flat.length; i++) {
+//     for (let j = 0; j<flat[i].length; j++) {
+//         newFlat.push(flat[i][j]);
+//     }
    
-}
-console.log(newFlat);
+// }
+// console.log(newFlat);
 
 
 // 22. **Sort and Reverse**  
 //     Sort `ages` in ascending order, then reverse it.  
-const ages = [10, 2, 5, 8];
+// const ages = [10, 2, 5, 8];
+// console.log(ages.sort((a,b) => a - b).reverse());
+
 
 // 23. **Extract Object Keys**  
+
 //     Given `member1`, loop through its keys and log them.  
-const member1 = {name: "Tom", age: 28};
+// const member1 = {name: "Tom", age: 28};
+
+const member1 = {name: 'Tom', age: 28};
+
+// for (const person in member1) {
+//     console.log(person);
+// }
+
 
 // 24. **Merge Arrays**  
 //     Merge `firstArray` and `secondArray` into one array using a loop or method.  
-let firstArray = [1, 2];
-let secondArray = [3, 4];
+// let firstArray = [1, 2];
+// let secondArray = [3, 4];
 
+// const thirdArray = []
+// for (let i = 0; i < firstArray.length; i++){
+//    thirdArray.push(firstArray[i]); 
+// }
 
+// for (let j = 0; j < secondArray.length; j++){
+//     thirdArray.push(secondArray[j]);       
+//     }
 
+// console.log(thirdArray);
